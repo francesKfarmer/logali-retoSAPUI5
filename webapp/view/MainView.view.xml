@@ -25,13 +25,13 @@
 										<items>
 											<ColumnListItem>
 												<cells>
-													<Label text="ID" labelFor="inputId" textAlign="Right" width="auto" required="true"/>
+													<Label text="{i18n>labelInputId}" labelFor="inputId" textAlign="Right" width="auto" required="true"/>
 													<Input id="inputId" placeholder="" value="{formData>/recoveredData/ID}" valueState="None" valueStateText="ID must contain only letters and numbers (1-20 characters)."  class="uniformInput" />
 												</cells>
 											</ColumnListItem>
 											<ColumnListItem>
 												<cells>
-													<Label text="Type Document" labelFor="slTypeDoc" required="true"/>
+													<Label text="{i18n>labelSlTypeDoc}" labelFor="slTypeDoc" required="true"/>
 													<Select id="slTypeDoc" selectedKey="{formData>/recoveredData/typeDocument}" forceSelection="false" items="{ path: 'formData>/typeDocuments' }"  textAlign="Right" width="100%" required="true">
 														<core:Item key="{formData>key}" text="{formData>text}" />
 													</Select>
@@ -39,26 +39,26 @@
 											</ColumnListItem>
 											<ColumnListItem>
 												<cells>
-													<Label text="Number Document" labelFor="inputNumberDoc" required="true"/>
+													<Label text="{i18n>labelInputNumberDoc}" labelFor="inputNumberDoc" required="true"/>
 													<Input id="inputNumberDoc" placeholder="" value="{formData>/recoveredData/numberDocument}" class="uniformInput" />
 												</cells>
 											</ColumnListItem>
 
 											<ColumnListItem>
 												<cells>
-													<Label text="First Name" labelFor="inputFName" required="true"/>
+													<Label text="{i18n>labelInputFName}" labelFor="inputFName" required="true"/>
 													<Input id="inputFName" placeholder="" value="{formData>/recoveredData/firstName}" class="uniformInput" />
 												</cells>
 											</ColumnListItem>
 
 											<ColumnListItem>
 												<cells>
-													<Label text="Last Name" labelFor="inputLName" required="true"/>
+													<Label text="{i18n>labelInputLName}" labelFor="inputLName" required="true"/>
 													<Input id="inputLName" placeholder="" value="{formData>/recoveredData/lastName}" class="uniformInput" />
 												</cells>
 											</ColumnListItem>
 											<ColumnListItem >
-												<Label text="Birth Date" labelFor="dateBirthDate" required="true"/>
+												<Label text="{i18n>labelDateBirth}" labelFor="dateBirthDate" required="true"/>
 												<DatePicker id="dateBirthDate" placeholder="format MM/DD/YYYY" value="{formData>/recoveredData/birthDate}" valueFormat="yyyy-MM-dd" displayFormat="MM/DD/YYYY" />
 											</ColumnListItem>
 										</items>
@@ -75,7 +75,7 @@
 										<items>
 											<ColumnListItem>
 												<cells>
-													<Label text="Place Birth" labelFor="slPlaceBirth" required="true"/>
+													<Label text="{i18n>labelSlPlaceBirth}" labelFor="slPlaceBirth" required="true"/>
 													<Select id="slPlaceBirth" selectedKey="{formData>/recoveredData/placeBirth}" forceSelection="false"  items="{ path: 'formData>/countries' }" textAlign="Right" width="100%" required="true">
 														<core:Item key="{formData>key}" text="{formData>text}" />
 													</Select>
@@ -83,7 +83,7 @@
 											</ColumnListItem>
 											<ColumnListItem>
 												<cells>
-													<Label text="Nationality" labelFor="slNationality" required="true"/>
+													<Label text="{i18n>labelSlNationality}" labelFor="slNationality" required="true"/>
 													<Select id="slNationality" selectedKey="{formData>/recoveredData/nationality}" forceSelection="false"  items="{ path: 'formData>/countries' }" textAlign="Right" width="100%" required="true">
 														<core:Item key="{formData>key}" text="{formData>text}" />
 													</Select>
@@ -91,7 +91,7 @@
 											</ColumnListItem>
 											<ColumnListItem>
 												<cells>
-													<Label text="Gender" labelFor="slGender" required="true"/>
+													<Label text="{i18n>labelSlGender}" labelFor="slGender" required="true"/>
 													<Select id="slGender" selectedKey="{formData>/recoveredData/gender}" forceSelection="false"  items="{ path: 'formData>/genders' }" textAlign="Right" width="100%" required="true">
 														<core:Item key="{formData>key}" text="{formData>text}" />
 													</Select>
@@ -99,7 +99,7 @@
 											</ColumnListItem>
 											<ColumnListItem>
 												<cells>
-													<Label text="Civil Status" labelFor="slCivilStatus" required="true"/>
+													<Label text="{i18n>labelSlCivilStatus}" labelFor="slCivilStatus" required="true"/>
 													<Select id="slCivilStatus" selectedKey="{formData>/recoveredData/civilStatus}" forceSelection="false"  items="{ path: 'formData>/civilStatus' }" textAlign="Right" width="100%" required="true">
 														<core:Item key="{formData>key}" text="{formData>text}" />
 													</Select>
@@ -122,7 +122,7 @@
 										<items>
 											<ColumnListItem>
 												<cells>
-													<Label text="Country" labelFor="slCountry" required="true"/>
+													<Label text="{i18n>labelSlCountry}" labelFor="slCountry" required="true"/>
 													<Select id="slCountry" selectedKey="{formData>/recoveredData/country}" forceSelection="false"  items="{ path: 'formData>/countries' }" textAlign="Right" width="100%" required="true">
 														<core:Item key="{formData>key}" text="{formData>text}" />
 													</Select>
@@ -130,7 +130,7 @@
 											</ColumnListItem>
 											<ColumnListItem>
 												<cells>
-													<Label text="Province" labelFor="slProvince" required="true"/>
+													<Label text="{i18n>labelSlProvince}" labelFor="slProvince" required="true"/>
 													<Select id="slProvince" selectedKey="{formData>/recoveredData/province}" forceSelection="false"  items="{ path: 'formData>/filteredProvinces' }" textAlign="Right" width="100%" required="true">
 														<core:Item key="{formData>key}" text="{formData>text}" />
 													</Select>
@@ -138,7 +138,7 @@
 											</ColumnListItem>
 											<ColumnListItem>
 												<cells>
-													<Label text="Region" labelFor="slRegion" required="true"/>
+													<Label text="{i18n>labelSlRegion}" labelFor="slRegion" required="true"/>
 													<Select id="slRegion" selectedKey="{formData>/recoveredData/region}" forceSelection="false"  items="{ path: 'formData>/filteredRegions' }" textAlign="Right" width="100%" required="true">
 														<core:Item key="{formData>key}" text="{formData>text}" />
 													</Select>
@@ -146,14 +146,14 @@
 											</ColumnListItem>
 											<ColumnListItem>
 												<cells>
-													<Label text="Address" labelFor="inputAddress" required="true"/>
+													<Label text="{i18n>inputAddress}" labelFor="inputAddress" required="true"/>
 													<Input id="inputAddress" placeholder="" value="{formData>/recoveredData/address}" class="uniformInput" />
 												</cells>
 											</ColumnListItem>
 
 											<ColumnListItem>
 												<cells>
-													<Label text="Postal Code" labelFor="inputPostalCode" required="true"/>
+													<Label text="{i18n>inputPostalCode}" labelFor="inputPostalCode" required="true"/>
 													<Input id="inputPostalCode" placeholder="" value="{formData>/recoveredData/postalCode}" class="uniformInput" />
 												</cells>
 											</ColumnListItem>
@@ -171,14 +171,14 @@
 										<items>
 											<ColumnListItem>
 												<cells>
-													<Label text="Phone Number" labelFor="inputPhone" required="true"/>
+													<Label text="{i18n>inputPhone}" labelFor="inputPhone" required="true"/>
 													<Input id="inputPhone" placeholder="" value="{formData>/recoveredData/phoneNumber}" class="uniformInput" />
 												</cells>
 											</ColumnListItem>
 
 											<ColumnListItem>
 												<cells>
-													<Label text="Email" labelFor="inputEmail" required="true"/>
+													<Label text="{i18n>inputEmail}" labelFor="inputEmail" required="true"/>
 													<Input id="inputEmail" placeholder="" value="{formData>/recoveredData/email}" class="uniformInput" />
 												</cells>
 											</ColumnListItem>
@@ -199,25 +199,25 @@
 
 								<columns>
 									<Column>
-										<Text text="Number Document" wrapping="true" class="shrinkText" maxLines="1"/>
+										<Text text="{i18n>cNumberDocument}" wrapping="true" class="shrinkText" maxLines="1"/>
 									</Column>
 									<Column>
-										<Text text="Full Name" wrapping="true" class="shrinkText" maxLines="2"/>
+										<Text text="{i18n>cFullName}" wrapping="true" class="shrinkText" maxLines="2"/>
 									</Column>
 									<Column>
-										<Text text="Birth Date" wrapping="true" class="shrinkText" maxLines="1"/>
+										<Text text="{i18n>cBirthDate}" wrapping="true" class="shrinkText" maxLines="1"/>
 									</Column>
 									<Column>
-										<Text text="Place Birth" wrapping="true" class="shrinkText" maxLines="1"/>
+										<Text text="{i18n>cPlaceBirth}" wrapping="true" class="shrinkText" maxLines="1"/>
 									</Column>
 									<Column>
-										<Text text="Nationality" wrapping="false" class="shrinkText" maxLines="1"/>
+										<Text text="{i18n>cNationality}" wrapping="false" class="shrinkText" maxLines="1"/>
 									</Column>
 									<Column>
-										<Text text="Gender" wrapping="false" class="shrinkText" maxLines="1"/>
+										<Text text="{i18n>cGender}" wrapping="false" class="shrinkText" maxLines="1"/>
 									</Column>
 									<Column>
-										<Text text="Civil Status" wrapping="true" class="shrinkText" maxLines="1"/>
+										<Text text="{i18n>cCivilStatus}" wrapping="true" class="shrinkText" maxLines="1"/>
 									</Column>
 
 									<!-- botón para ver el resto de columnas -->
@@ -245,35 +245,35 @@
 						</Panel>
 
 						<!-- dialog con el resto de columnas -->
-						<Dialog id="columnDialog" title="Additional Information" class="sapUiSmallMargin">
-							<Table id="tAdditionalColumns" headerText="Additional Columns" items="{path: 'savedData>/savedData'}">
+						<Dialog id="columnDialog" title="{i18n>tDialog}" class="sapUiSmallMargin">
+							<Table id="tAdditionalColumns" headerText="" items="{path: 'savedData>/savedData'}">
 								<columns>
 									<Column>
-										<Text text="ID"/>
+										<Text text="{i18n>cID}"/>
 									</Column>
 									<Column>
-										<Text text="Email"/>
+										<Text text="{i18n>cEmail}"/>
 									</Column>
 									<Column>
-										<Text text="Type Document"/>
+										<Text text="{i18n>cTypeDoc}"/>
 									</Column>
 									<Column>
-										<Text text="Country"/>
+										<Text text="{i18n>cCountry}"/>
 									</Column>
 									<Column>
-										<Text text="Province"/>
+										<Text text="{i18n>cProvince}"/>
 									</Column>
 									<Column>
-										<Text text="Region"/>
+										<Text text="{i18n>cRegion}"/>
 									</Column>
 									<Column>
-										<Text text="Address"/>
+										<Text text="{i18n>cAddress}"/>
 									</Column>
 									<Column>
-										<Text text="Postal Code"/>
+										<Text text="{i18n>cPostalCode}"/>
 									</Column>
 									<Column>
-										<Text text="Phone Number"/>
+										<Text text="{i18n>cPhone}"/>
 									</Column>
 								</columns>
 								<items>
@@ -293,7 +293,7 @@
 								</items>
 							</Table>
 							<beginButton>
-								<Button text="Close" press="onCloseDialogPress" />
+								<Button text="{i18n>btnCloseDialog}" press="onCloseDialogPress" />
 							</beginButton>
 						</Dialog>
 					</content>
