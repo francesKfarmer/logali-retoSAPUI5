@@ -1,0 +1,45 @@
+/* Enter your custom styles here */
+
+.labelAlignCenter {
+  align-items: center;
+  height: 100%;
+  text-align: left;
+  justify-content: flex-end;
+  display: flex;
+  padding-right: 0.5rem;
+}
+
+.blockContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem 0 0;
+}
+
+.blockVBox {
+  flex: 1;
+  min-width: 50%;
+  justify-items: center;
+  margin-bottom: 1rem;
+  margin-top: 0.2rem;
+  margin-right: 1rem;
+}
+
+.blockRow {
+  display: flex;
+  align-content: center;
+  justify-items: left;
+  margin-bottom: 0.1rem;
+}
+
+.customSmallTitle {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+}
+.shrinkText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: smaller; 
+}

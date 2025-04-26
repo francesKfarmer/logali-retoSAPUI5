@@ -1,0 +1,440 @@
+{
+  "filteredProvince": [],
+  "filteredRegions": [],
+  "recoveredData": {
+    "ID": "",
+    "typeDocument": "",
+    "numberDocument": "",
+    "firstName": "",
+    "lastName": "",
+    "birthDate": "",
+    "placeBirth": "",
+    "nationality": "",
+    "gender": "",
+    "civilStatus": "",
+    "country": "",
+    "province": "",
+    "region": "",
+    "address": "",
+    "postalCode": "",
+    "phoneNumber": "",
+    "email": ""
+  },
+  "typeDocuments": [
+    {
+      "key": "ID",
+      "text": "National Id"
+    },
+    {
+      "key": "PAS",
+      "text": "Passport"
+    },
+    {
+      "key": "DL",
+      "text": "Driver's License"
+    }
+  ],
+  "genders": [
+    {
+      "key": "M",
+      "text": "Male"
+    },
+    {
+      "key": "F",
+      "text": "Female"
+    },
+    {
+      "key": "O",
+      "text": "Other"
+    }
+  ],
+  "civilStatus": [
+    {
+      "key": "S",
+      "text": "Single"
+    },
+    {
+      "key": "M",
+      "text": "Married"
+    },
+    {
+      "key": "D",
+      "text": "Divorced"
+    },
+    {
+      "key": "W",
+      "text": "Widower"
+    }
+  ],
+  "countries": [
+    {
+      "key": "ES",
+      "text": "España"
+    },
+    {
+      "key": "AR",
+      "text": "Argentina"
+    },
+    {
+      "key": "MX",
+      "text": "México"
+    },
+    {
+      "key": "CO",
+      "text": "Colombia"
+    },
+    {
+      "key": "CL",
+      "text": "Chile"
+    },
+    {
+      "key": "PE",
+      "text": "Perú"
+    },
+    {
+      "key": "VE",
+      "text": "Venezuela"
+    },
+    {
+      "key": "UY",
+      "text": "Uruguay"
+    },
+    {
+      "key": "PY",
+      "text": "Paraguay"
+    },
+    {
+      "key": "BO",
+      "text": "Bolivia"
+    },
+    {
+      "key": "EC",
+      "text": "Ecuador"
+    },
+    {
+      "key": "GT",
+      "text": "Guatemala"
+    },
+    {
+      "key": "CU",
+      "text": "Cuba"
+    },
+    {
+      "key": "DO",
+      "text": "República Dominicana"
+    },
+    {
+      "key": "HN",
+      "text": "Honduras"
+    },
+    {
+      "key": "NI",
+      "text": "Nicaragua"
+    },
+    {
+      "key": "CR",
+      "text": "Costa Rica"
+    },
+    {
+      "key": "PA",
+      "text": "Panamá"
+    },
+    {
+      "key": "SV",
+      "text": "El Salvador"
+    },
+    {
+      "key": "BR",
+      "text": "Brasil"
+    },
+    {
+      "key": "US",
+      "text": "Estados Unidos"
+    },
+    {
+      "key": "FR",
+      "text": "Francia"
+    },
+    {
+      "key": "IT",
+      "text": "Italia"
+    },
+    {
+      "key": "DE",
+      "text": "Alemania"
+    },
+    {
+      "key": "UK",
+      "text": "Reino Unido"
+    },
+    {
+      "key": "PT",
+      "text": "Portugal"
+    },
+    {
+      "key": "CA",
+      "text": "Canadá"
+    },
+    {
+      "key": "CN",
+      "text": "China"
+    },
+    {
+      "key": "JP",
+      "text": "Japón"
+    },
+    {
+      "key": "IN",
+      "text": "India"
+    }
+  ],
+  "provinces": [
+    {
+      "countryKey": "ES",
+      "key": "MD",
+      "text": "Madrid"
+    },
+    {
+      "countryKey": "ES",
+      "key": "CT",
+      "text": "Barcelona"
+    },
+    {
+      "countryKey": "ES",
+      "key": "AN",
+      "text": "Málaga"
+    },
+    {
+      "countryKey": "AR",
+      "key": "C",
+      "text": "Buenos Aires"
+    },
+    {
+      "countryKey": "AR",
+      "key": "B",
+      "text": "Córdoba"
+    },
+    {
+      "countryKey": "MX",
+      "key": "CMX",
+      "text": "Ciudad de México"
+    },
+    {
+      "countryKey": "MX",
+      "key": "JAL",
+      "text": "Jalisco"
+    },
+    {
+      "countryKey": "CO",
+      "key": "DC",
+      "text": "Bogotá"
+    },
+    {
+      "countryKey": "CO",
+      "key": "ANT",
+      "text": "Antioquia"
+    },
+    {
+      "countryKey": "CL",
+      "key": "RM",
+      "text": "Región Metropolitana"
+    },
+    {
+      "countryKey": "PE",
+      "key": "LIM",
+      "text": "Lima"
+    },
+    {
+      "countryKey": "VE",
+      "key": "DC",
+      "text": "Distrito Capital"
+    },
+    {
+      "countryKey": "UY",
+      "key": "MO",
+      "text": "Montevideo"
+    },
+    {
+      "countryKey": "PY",
+      "key": "ASU",
+      "text": "Asunción"
+    },
+    {
+      "countryKey": "BO",
+      "key": "LP",
+      "text": "La Paz"
+    },
+    {
+      "countryKey": "EC",
+      "key": "P",
+      "text": "Pichincha"
+    },
+    {
+      "countryKey": "GT",
+      "key": "GUA",
+      "text": "Guatemala"
+    },
+    {
+      "countryKey": "CU",
+      "key": "HAB",
+      "text": "La Habana"
+    },
+    {
+      "countryKey": "DO",
+      "key": "DN",
+      "text": "Distrito Nacional"
+    },
+    {
+      "countryKey": "HN",
+      "key": "FM",
+      "text": "Francisco Morazán"
+    },
+    {
+      "countryKey": "NI",
+      "key": "MN",
+      "text": "Managua"
+    },
+    {
+      "countryKey": "CR",
+      "key": "SJ",
+      "text": "San José"
+    },
+    {
+      "countryKey": "PA",
+      "key": "PA",
+      "text": "Panamá"
+    },
+    {
+      "countryKey": "SV",
+      "key": "SS",
+      "text": "San Salvador"
+    },
+    {
+      "countryKey": "BR",
+      "key": "SP",
+      "text": "São Paulo"
+    },
+    {
+      "countryKey": "FR",
+      "key": "IDF",
+      "text": "Île-de-France"
+    },
+    {
+      "countryKey": "IT",
+      "key": "LAZ",
+      "text": "Lazio"
+    },
+    {
+      "countryKey": "DE",
+      "key": "BE",
+      "text": "Berlín"
+    },
+    {
+      "countryKey": "UK",
+      "key": "ENG",
+      "text": "Inglaterra"
+    },
+    {
+      "countryKey": "PT",
+      "key": "LX",
+      "text": "Lisboa"
+    }
+  ],
+  "regions": [
+    {
+      "provinceKey": "MD",
+      "key": "MD-C",
+      "text": "Centro"
+    },
+    {
+      "provinceKey": "MD",
+      "key": "MD-N",
+      "text": "Norte"
+    },
+    {
+      "provinceKey": "MD",
+      "key": "MD-S",
+      "text": "Sur"
+    },
+    {
+      "provinceKey": "CT",
+      "key": "CT-BAR",
+      "text": "Barcelona Ciudad"
+    },
+    {
+      "provinceKey": "CT",
+      "key": "CT-GAR",
+      "text": "Garraf"
+    },
+    {
+      "provinceKey": "CT",
+      "key": "CT-MAR",
+      "text": "Maresme"
+    },
+    {
+      "provinceKey": "AN",
+      "key": "AN-SE",
+      "text": "El Palo"
+    },
+    {
+      "provinceKey": "AN",
+      "key": "AN-SU",
+      "text": "Teatinos"
+    },
+    {
+      "provinceKey": "AN",
+      "key": "AN-AL",
+      "text": "Conde Ureña"
+    },
+    {
+      "provinceKey": "C",
+      "key": "C-N",
+      "text": "Buenos Aires Norte"
+    },
+    {
+      "provinceKey": "C",
+      "key": "C-S",
+      "text": "Buenos Aires Sur"
+    },
+    {
+      "provinceKey": "CMX",
+      "key": "CMX-CEN",
+      "text": "Centro Histórico"
+    },
+    {
+      "provinceKey": "CMX",
+      "key": "CMX-COY",
+      "text": "Coyoacán"
+    },
+    {
+      "provinceKey": "ANT",
+      "key": "ANT-MED",
+      "text": "Medellín"
+    },
+    {
+      "provinceKey": "ANT",
+      "key": "ANT-ORN",
+      "text": "Oriente Antioqueño"
+    },
+    {
+      "provinceKey": "RM",
+      "key": "RM-SCL",
+      "text": "Santiago Centro"
+    },
+    {
+      "provinceKey": "RM",
+      "key": "RM-PTE",
+      "text": "Puente Alto"
+    },
+    {
+      "provinceKey": "LIM",
+      "key": "LIM-C",
+      "text": "Lima Centro"
+    },
+    {
+      "provinceKey": "LIM",
+      "key": "LIM-N",
+      "text": "Lima Norte"
+    }
+  ]
+}

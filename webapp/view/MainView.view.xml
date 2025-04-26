@@ -1,0 +1,304 @@
+<mvc:View controllerName="logaligroup.retosapui5.controller.MainView"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:mdc="sap.ui.mdc"
+	xmlns:mdct="sap.ui.mdc.table"
+	xmlns:layout="sap.ui.layout"
+	xmlns:message="sap.m" displayBlock="true">
+	<Shell id="shell">
+		<App id="app2">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<!-- Panel del formulario -->
+						<Panel id="panelReto" headerText="">
+							<HBox class="blockContainer">
+								<!-- Personal Information -->
+								<VBox class="blockVBox" fitContainer="true">
+									<Title text="{i18n>formBox1}" level="H6" class="customSmallTitle" />
+									<Table inset="false" showSeparators="None" backgroundDesign="Transparent" width="100%">
+										<columns>
+											<Column width="150px" hAlign="Right" vAlign="Middle"/>
+											<Column hAlign="Left" vAlign="Middle"/>
+										</columns>
+										<items>
+											<ColumnListItem>
+												<cells>
+													<Label text="ID" labelFor="inputId" textAlign="Right" width="auto" required="true"/>
+													<Input id="inputId" placeholder="" value="{formData>/recoveredData/ID}" valueState="None" valueStateText="ID must contain only letters and numbers (1-20 characters)."  class="uniformInput" />
+												</cells>
+											</ColumnListItem>
+											<ColumnListItem>
+												<cells>
+													<Label text="Type Document" labelFor="slTypeDoc" required="true"/>
+													<Select id="slTypeDoc" selectedKey="{formData>/recoveredData/typeDocument}" forceSelection="false" items="{ path: 'formData>/typeDocuments' }"  textAlign="Right" width="100%" required="true">
+														<core:Item key="{formData>key}" text="{formData>text}" />
+													</Select>
+												</cells>
+											</ColumnListItem>
+											<ColumnListItem>
+												<cells>
+													<Label text="Number Document" labelFor="inputNumberDoc" required="true"/>
+													<Input id="inputNumberDoc" placeholder="" value="{formData>/recoveredData/numberDocument}" class="uniformInput" />
+												</cells>
+											</ColumnListItem>
+
+											<ColumnListItem>
+												<cells>
+													<Label text="First Name" labelFor="inputFName" required="true"/>
+													<Input id="inputFName" placeholder="" value="{formData>/recoveredData/firstName}" class="uniformInput" />
+												</cells>
+											</ColumnListItem>
+
+											<ColumnListItem>
+												<cells>
+													<Label text="Last Name" labelFor="inputLName" required="true"/>
+													<Input id="inputLName" placeholder="" value="{formData>/recoveredData/lastName}" class="uniformInput" />
+												</cells>
+											</ColumnListItem>
+											<ColumnListItem >
+												<Label text="Birth Date" labelFor="dateBirthDate" required="true"/>
+												<DatePicker id="dateBirthDate" placeholder="format MM/DD/YYYY" value="{formData>/recoveredData/birthDate}" valueFormat="yyyy-MM-dd" displayFormat="MM/DD/YYYY" />
+											</ColumnListItem>
+										</items>
+									</Table>
+								</VBox>
+								<!-- Other Information -->
+								<VBox class="blockVBox">
+									<Title text="{i18n>formBox2}" level="H6" class="customSmallTitle" />
+									<Table inset="false" showSeparators="None" backgroundDesign="Transparent" width="100%">
+										<columns>
+											<Column width="150px" hAlign="Right" vAlign="Middle"/>
+											<Column hAlign="Left" vAlign="Middle"/>
+										</columns>
+										<items>
+											<ColumnListItem>
+												<cells>
+													<Label text="Place Birth" labelFor="slPlaceBirth" required="true"/>
+													<Select id="slPlaceBirth" selectedKey="{formData>/recoveredData/placeBirth}" forceSelection="false"  items="{ path: 'formData>/countries' }" textAlign="Right" width="100%" required="true">
+														<core:Item key="{formData>key}" text="{formData>text}" />
+													</Select>
+												</cells>
+											</ColumnListItem>
+											<ColumnListItem>
+												<cells>
+													<Label text="Nationality" labelFor="slNationality" required="true"/>
+													<Select id="slNationality" selectedKey="{formData>/recoveredData/nationality}" forceSelection="false"  items="{ path: 'formData>/countries' }" textAlign="Right" width="100%" required="true">
+														<core:Item key="{formData>key}" text="{formData>text}" />
+													</Select>
+												</cells>
+											</ColumnListItem>
+											<ColumnListItem>
+												<cells>
+													<Label text="Gender" labelFor="slGender" required="true"/>
+													<Select id="slGender" selectedKey="{formData>/recoveredData/gender}" forceSelection="false"  items="{ path: 'formData>/genders' }" textAlign="Right" width="100%" required="true">
+														<core:Item key="{formData>key}" text="{formData>text}" />
+													</Select>
+												</cells>
+											</ColumnListItem>
+											<ColumnListItem>
+												<cells>
+													<Label text="Civil Status" labelFor="slCivilStatus" required="true"/>
+													<Select id="slCivilStatus" selectedKey="{formData>/recoveredData/civilStatus}" forceSelection="false"  items="{ path: 'formData>/civilStatus' }" textAlign="Right" width="100%" required="true">
+														<core:Item key="{formData>key}" text="{formData>text}" />
+													</Select>
+												</cells>
+											</ColumnListItem>
+
+										</items>
+									</Table>
+								</VBox>
+							</HBox>
+							<HBox class="blockContainer">
+								<!-- Address Information -->
+								<VBox class="blockVBox">
+									<Title text="{i18n>formBox2}" level="H6" class="customSmallTitle" />
+									<Table inset="false" showSeparators="None" backgroundDesign="Transparent" width="100%">
+										<columns>
+											<Column width="150px" hAlign="Right" vAlign="Middle"/>
+											<Column hAlign="Left" vAlign="Middle"/>
+										</columns>
+										<items>
+											<ColumnListItem>
+												<cells>
+													<Label text="Country" labelFor="slCountry" required="true"/>
+													<Select id="slCountry" selectedKey="{formData>/recoveredData/country}" forceSelection="false"  items="{ path: 'formData>/countries' }" textAlign="Right" width="100%" required="true">
+														<core:Item key="{formData>key}" text="{formData>text}" />
+													</Select>
+												</cells>
+											</ColumnListItem>
+											<ColumnListItem>
+												<cells>
+													<Label text="Province" labelFor="slProvince" required="true"/>
+													<Select id="slProvince" selectedKey="{formData>/recoveredData/province}" forceSelection="false"  items="{ path: 'formData>/filteredProvinces' }" textAlign="Right" width="100%" required="true">
+														<core:Item key="{formData>key}" text="{formData>text}" />
+													</Select>
+												</cells>
+											</ColumnListItem>
+											<ColumnListItem>
+												<cells>
+													<Label text="Region" labelFor="slRegion" required="true"/>
+													<Select id="slRegion" selectedKey="{formData>/recoveredData/region}" forceSelection="false"  items="{ path: 'formData>/filteredRegions' }" textAlign="Right" width="100%" required="true">
+														<core:Item key="{formData>key}" text="{formData>text}" />
+													</Select>
+												</cells>
+											</ColumnListItem>
+											<ColumnListItem>
+												<cells>
+													<Label text="Address" labelFor="inputAddress" required="true"/>
+													<Input id="inputAddress" placeholder="" value="{formData>/recoveredData/address}" class="uniformInput" />
+												</cells>
+											</ColumnListItem>
+
+											<ColumnListItem>
+												<cells>
+													<Label text="Postal Code" labelFor="inputPostalCode" required="true"/>
+													<Input id="inputPostalCode" placeholder="" value="{formData>/recoveredData/postalCode}" class="uniformInput" />
+												</cells>
+											</ColumnListItem>
+										</items>
+									</Table>
+								</VBox>
+								<!-- Contact Information -->
+								<VBox class="blockVBox">
+									<Title text="{i18n>formBox4}" level="H6" class="customSmallTitle" />
+									<Table inset="false" showSeparators="None" backgroundDesign="Transparent" width="100%">
+										<columns>
+											<Column width="150px" hAlign="Right" vAlign="Middle"/>
+											<Column hAlign="Left" vAlign="Middle"/>
+										</columns>
+										<items>
+											<ColumnListItem>
+												<cells>
+													<Label text="Phone Number" labelFor="inputPhone" required="true"/>
+													<Input id="inputPhone" placeholder="" value="{formData>/recoveredData/phoneNumber}" class="uniformInput" />
+												</cells>
+											</ColumnListItem>
+
+											<ColumnListItem>
+												<cells>
+													<Label text="Email" labelFor="inputEmail" required="true"/>
+													<Input id="inputEmail" placeholder="" value="{formData>/recoveredData/email}" class="uniformInput" />
+												</cells>
+											</ColumnListItem>
+										</items>
+									</Table>
+								</VBox>
+							</HBox>
+							<!-- Barra de botones -->
+							<HBox justifyContent="End">
+								<Button id="btnSave" text="{i18n>btnSave}" icon="sap-icon://save" type="Accept" press="onSave" class="sapUiSmallMargin"/>
+								<Button id="btnClearForm" text="{i18n>btnClearForm}" icon="sap-icon://clear-all" type="Reject" press="onClearForm" class="sapUiSmallMargin"/>
+								<Button id="btnClearData" text="{i18n>btnClearData}" icon="sap-icon://clear-all" type="Reject" press="onClearData" class="sapUiSmallMargin"/>
+							</HBox>
+						</Panel>
+						<!-- Panel de datos de usuario -->
+						<Panel id="panelUser" headerText="">
+							<Table id="tUserData" headerText="Users (0)" items="{ path: 'savedData>/savedData'}" mode="SingleSelectMaster" growing="true" growingScrollToLoad="true">
+
+								<columns>
+									<Column>
+										<Text text="Number Document" wrapping="true" class="shrinkText" maxLines="1"/>
+									</Column>
+									<Column>
+										<Text text="Full Name" wrapping="true" class="shrinkText" maxLines="2"/>
+									</Column>
+									<Column>
+										<Text text="Birth Date" wrapping="true" class="shrinkText" maxLines="1"/>
+									</Column>
+									<Column>
+										<Text text="Place Birth" wrapping="true" class="shrinkText" maxLines="1"/>
+									</Column>
+									<Column>
+										<Text text="Nationality" wrapping="false" class="shrinkText" maxLines="1"/>
+									</Column>
+									<Column>
+										<Text text="Gender" wrapping="false" class="shrinkText" maxLines="1"/>
+									</Column>
+									<Column>
+										<Text text="Civil Status" wrapping="true" class="shrinkText" maxLines="1"/>
+									</Column>
+
+									<!-- botón para ver el resto de columnas -->
+									<Column>
+										<Button icon="sap-icon://arrow-right" press="onShowMoreColumnsPress" tooltip="Show More Columns"/>
+									</Column>
+								</columns>
+
+								<items>
+									<ColumnListItem>
+										<cells>
+											<Text text="{savedData>numberDocument}"/>
+											<Text text="{= ${savedData>firstName} + ' ' + ${savedData>lastName} }"/>
+											<Text text="{savedData>birthDate}"/>
+											<Text text="{savedData>placeBirth}"/>
+											<Text text="{savedData>nationality}"/>
+											<Text text="{savedData>gender}"/>
+											<Text text="{savedData>civilStatus}"/>
+											<Button icon="sap-icon://arrow-right" press="onShowMoreColumnsPress" tooltip="Show More Columns"/>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+
+						</Panel>
+
+						<!-- dialog con el resto de columnas -->
+						<Dialog id="columnDialog" title="Additional Information" class="sapUiSmallMargin">
+							<Table id="tAdditionalColumns" headerText="Additional Columns" items="{path: 'savedData>/savedData'}">
+								<columns>
+									<Column>
+										<Text text="ID"/>
+									</Column>
+									<Column>
+										<Text text="Email"/>
+									</Column>
+									<Column>
+										<Text text="Type Document"/>
+									</Column>
+									<Column>
+										<Text text="Country"/>
+									</Column>
+									<Column>
+										<Text text="Province"/>
+									</Column>
+									<Column>
+										<Text text="Region"/>
+									</Column>
+									<Column>
+										<Text text="Address"/>
+									</Column>
+									<Column>
+										<Text text="Postal Code"/>
+									</Column>
+									<Column>
+										<Text text="Phone Number"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem>
+										<cells>
+											<Text text="{savedData>ID}"/>
+											<Text text="{savedData>email}"/>
+											<Text text="{savedData>typeDocument}"/>
+											<Text text="{savedData>country}"/>
+											<Text text="{savedData>province}"/>
+											<Text text="{savedData>region}"/>
+											<Text text="{savedData>address}"/>
+											<Text text="{savedData>postalCode}"/>
+											<Text text="{savedData>phoneNumber}"/>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+							<beginButton>
+								<Button text="Close" press="onCloseDialogPress" />
+							</beginButton>
+						</Dialog>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
